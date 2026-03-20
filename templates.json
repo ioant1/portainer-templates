@@ -2,19 +2,17 @@
   "version": "2",
   "templates": [
     {
-      "type": 1,
-      "title": "WordPress",
-      "description": "Simple WordPress",
-      "name": "wordpress",
+      "type": 2,
+      "title": "WordPress (One Click)",
+      "description": "WordPress with MySQL",
+      "name": "wordpress-stack",
       "categories": ["CMS"],
       "platform": "linux",
-      "image": "wordpress:latest",
-      "ports": [
-        {
-          "containerPort": 80,
-          "protocol": "tcp"
-        }
-      ]
+      "logo": "https://cdn.worldvectorlogo.com/logos/wordpress-icon-1.svg",
+      "repository": {
+        "url": "https://github.com/docker/awesome-compose",
+        "stackfile": "official-documentation-samples/wordpress-mysql/compose.yaml"
+      }
     }
   ]
 }
