@@ -2,18 +2,33 @@
   "version": "3",
   "templates": [
     {
-      "id": 1,
-      "type": 2,
-      "title": "WordPress One-Click",
-      "description": "WordPress with MySQL database",
-      "name": "wordpress-oneclick",
+      "id": 10,
+      "type": 1,
+      "title": "WordPress",
+      "description": "Basic WordPress container",
       "categories": ["CMS"],
       "platform": "linux",
       "logo": "https://cdn.worldvectorlogo.com/logos/wordpress-icon-1.svg",
-      "repository": {
-        "url": "https://github.com/docker/awesome-compose",
-        "stackfile": "official-documentation-samples/wordpress-mysql/compose.yaml"
-      }
+      "image": "wordpress:latest",
+      "ports": ["8081:80"],
+      "env": [
+        {
+          "name": "WORDPRESS_DB_HOST",
+          "default": "db"
+        },
+        {
+          "name": "WORDPRESS_DB_USER",
+          "default": "wpuser"
+        },
+        {
+          "name": "WORDPRESS_DB_PASSWORD",
+          "default": "wppass"
+        },
+        {
+          "name": "WORDPRESS_DB_NAME",
+          "default": "wordpress"
+        }
+      ]
     }
   ]
 }
