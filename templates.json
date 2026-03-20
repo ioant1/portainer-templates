@@ -1,11 +1,12 @@
 {
-  "version": "2",
+  "version": "3",
   "templates": [
     {
+      "id": 1,
       "type": 2,
-      "title": "WordPress (One Click)",
-      "description": "WordPress with MySQL",
-      "name": "wordpress-stack",
+      "title": "WordPress One-Click",
+      "description": "WordPress with MySQL database",
+      "name": "wordpress-oneclick",
       "categories": ["CMS"],
       "platform": "linux",
       "logo": "https://cdn.worldvectorlogo.com/logos/wordpress-icon-1.svg",
