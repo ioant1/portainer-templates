@@ -2,36 +2,13 @@
   "version": "2",
   "templates": [
     {
-      "type": 2,
+      "type": 1,
       "title": "WordPress",
-      "description": "Deploy a WordPress site",
+      "description": "Simple WordPress",
       "name": "wordpress",
       "categories": ["CMS"],
       "platform": "linux",
-      "logo": "https://cdn.worldvectorlogo.com/logos/wordpress-icon-1.svg",
       "image": "wordpress:latest",
-      "env": [
-        {
-          "name": "MYSQL_ROOT_PASSWORD",
-          "label": "MySQL Root Password",
-          "default": "rootpass"
-        },
-        {
-          "name": "MYSQL_DATABASE",
-          "label": "Database Name",
-          "default": "wordpress"
-        },
-        {
-          "name": "MYSQL_USER",
-          "label": "Database User",
-          "default": "wpuser"
-        },
-        {
-          "name": "MYSQL_PASSWORD",
-          "label": "Database Password",
-          "default": "wppass"
-        }
-      ],
       "ports": [
         {
           "containerPort": 80,
